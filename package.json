@@ -1,0 +1,15 @@
+{
+  "name": "dsh-desktop",
+  "private": true,
+  "version": "0.1.0",
+  "description": "DeepSeek Harness 的 Windows 桌面壳（Tauri 2 + WebView2）",
+  "scripts": {
+    "icons": "node scripts/gen-icons.mjs",
+    "dev": "tauri dev",
+    "build": "tauri build",
+    "tauri": "tauri"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2"
+  }
+}
