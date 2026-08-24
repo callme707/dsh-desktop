@@ -12,7 +12,9 @@ crate-type = ["staticlib", "cdylib", "rlib"]
 tauri-build = { version = "2", features = [] }
 
 [dependencies]
-tauri = { version = "2", features = [] }
+semver = "1"
+serde_json = "1"
+tauri = { version = "2", features = ["unstable"] }
 tauri-plugin-single-instance = "2"
 tauri-plugin-dialog = "2"
 

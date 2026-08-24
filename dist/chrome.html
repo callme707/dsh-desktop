@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'" />
+  <title>dsh desktop</title>
+  <link rel="stylesheet" href="./chrome.css" />
+  <script src="./chrome.js" defer></script>
+</head>
+<body>
+  <header class="titlebar" aria-label="dsh desktop 窗口工具栏">
+    <div class="brand-zone drag-zone" data-drag-zone>
+      <div class="brand" aria-label="dsh desktop">
+        <img class="app-icon" src="./assets/app-icon.png" alt="" />
+        <span class="brand-name">dsh</span>
+        <span class="brand-edition">desktop</span>
+      </div>
+
+      <div class="kernel-status" role="status" aria-live="polite">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span id="kernel-status-label">正在启动</span>
+      </div>
+    </div>
+
+    <div class="workspace-zone drag-zone" data-drag-zone>
+      <div class="breadcrumb" aria-label="当前位置">
+        <span class="breadcrumb-parent">工作台</span>
+        <span class="breadcrumb-separator" aria-hidden="true">/</span>
+        <span class="breadcrumb-current">DeepSeek Harness</span>
+      </div>
+    </div>
+
+    <nav class="window-actions" aria-label="窗口操作">
+      <button
+        id="check-update"
+        class="titlebar-button update-button"
+        type="button"
+        aria-label="检查 dsh 更新"
+        title="检查 dsh 更新"
+        disabled
+      >
+        <img src="./assets/icons/refresh.svg" alt="" />
+      </button>
+      <span class="action-divider" aria-hidden="true"></span>
+      <button id="minimize" class="titlebar-button window-button" type="button" aria-label="最小化" title="最小化">
+        <img src="./assets/icons/minus.svg" alt="" />
+      </button>
+      <button id="maximize" class="titlebar-button window-button" type="button" aria-label="最大化" title="最大化">
+        <img id="maximize-icon" src="./assets/icons/square.svg" alt="" />
+      </button>
+      <button id="close" class="titlebar-button window-button close-button" type="button" aria-label="关闭" title="关闭">
+        <img src="./assets/icons/x.svg" alt="" />
+      </button>
+    </nav>
+  </header>
+</body>
+</html>

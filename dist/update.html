@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="dark" />
-  <title>DeepSeek Harness</title>
+  <title>dsh 更新中</title>
   <link rel="icon" href="./assets/icons/shield.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="./shell.css" />
 </head>
@@ -13,57 +13,57 @@
     <section class="intro">
       <p class="brand"><strong>dsh</strong> desktop</p>
       <div class="intro-copy">
-        <h1 id="page-title">正在启动工作台</h1>
+        <h1 id="page-title">内核更新进行中</h1>
         <p class="description">
-          正在唤醒本地 dsh 服务，请稍候。<br />
-          服务就绪后将自动进入主界面。
+          正在安全地更新 dsh 内核，请稍候。<br />
+          更新完成后将自动重启并应用新版本。
         </p>
         <p class="assurance">
           <img src="./assets/icons/shield.svg" alt="" />
-          <span>仅连接本机 dsh 服务</span>
+          <span>请勿关闭应用</span>
         </p>
       </div>
     </section>
 
     <div class="vertical-divider" aria-hidden="true"></div>
 
-    <section class="workflow" aria-label="启动进度">
+    <section class="workflow" aria-label="更新进度">
       <ol class="steps">
         <li class="step complete">
           <div class="marker"><img src="./assets/icons/check.svg" alt="" /></div>
           <div class="step-copy">
-            <h2>加载桌面窗口</h2>
+            <h2>检查版本</h2>
+            <p>已完成</p>
+          </div>
+        </li>
+        <li class="step complete">
+          <div class="marker"><img src="./assets/icons/check.svg" alt="" /></div>
+          <div class="step-copy">
+            <h2>释放托管服务</h2>
             <p>已完成</p>
           </div>
         </li>
         <li class="step active" aria-current="step">
           <div class="marker"><img src="./assets/icons/point.svg" alt="" /></div>
           <div class="step-copy">
-            <h2>启动 dsh 服务</h2>
-            <p>正在启动本地进程</p>
+            <h2>安装 dsh 内核</h2>
+            <p>正在执行 <code>npm i -g @deepseek-ai/dsh@latest</code></p>
           </div>
         </li>
         <li class="step waiting">
           <div class="marker"><img src="./assets/icons/dots.svg" alt="" /></div>
           <div class="step-copy">
-            <h2>等待工作台就绪</h2>
-            <p>等待本地端口响应</p>
-          </div>
-        </li>
-        <li class="step waiting">
-          <div class="marker"><img src="./assets/icons/dots.svg" alt="" /></div>
-          <div class="step-copy">
-            <h2>打开主界面</h2>
+            <h2>准备重启</h2>
             <p>等待中</p>
           </div>
         </li>
       </ol>
     </section>
 
-    <footer class="metadata" aria-label="运行信息">
-      <span>运行方式 <strong>本地托管</strong></span>
+    <footer class="metadata" aria-label="更新信息">
+      <span>更新源 <strong>npm registry</strong></span>
       <span class="metadata-divider" aria-hidden="true"></span>
-      <span>启动日志：<code>%LOCALAPPDATA%\com.dsh.desktop\logs\dsh-server.log</code></span>
+      <span>更新日志：<code>%LOCALAPPDATA%\com.dsh.desktop\logs\dsh-update.log</code></span>
     </footer>
   </main>
 </body>
